@@ -23,7 +23,7 @@ const start = async() => {
     try {
         await connectDB(process.env.MONGO_URI);
         //問題なく立ち上がったらメッセージを表示
-    app.listen(PORT, console.log("サーバーが起動しました"));
+    app.listen(process.env.PORT || PORT, console.log("サーバーが起動しました"));
     }catch (err){
         console.log(err);
     }
