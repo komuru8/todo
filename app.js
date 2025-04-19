@@ -12,8 +12,8 @@ app.use(express.json());
 //publicで静的ページを読み込むと宣言
 app.use(express.static("./public"));
 
-//ローカルサーバーを立ち上げ
-const PORT =5000;
+//環境変数 PORT がなければ 5000 をデフォルトで使用
+const PORT = process.env.PORT || 5000;
 
 //ルーティング設計
 app.use("/api/v1/tasks", taskRoute);
