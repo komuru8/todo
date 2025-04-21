@@ -1,7 +1,7 @@
 //スキーマの定義
 const mongoose = require("mongoose");
 
-const TaskScheme = new mongoose.Schema({
+const TaskSchema = new mongoose.Schema({
     name: {
     type: String,
     required: [true, "タスク名を入れてください。"],
@@ -14,4 +14,4 @@ const TaskScheme = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model("Task", TaskScheme);
+module.exports = mongoose.model("Task", TaskSchema);
