@@ -1,7 +1,6 @@
-
 {
-    "name": "TODOアプリ",
-    "short_name": "TODO",
+    "name": "KOMURU bucketlist",
+    "short_name": "bucketlist",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
