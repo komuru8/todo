@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOMURU bucket list</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- public/index.html -->
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#1e90ff">
-    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <!-- iOS ホーム画面アイコン -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120x120.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KOMURU bucket list</title>
+
+  <!-- PWA / iOS / Android 対応 -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#1e90ff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="KOMURU TODO" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120x120.png" />
+
+  <!-- CSS / FontAwesome -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <form class="task-form">
-        <h4>KOMURUやりたいことリスト</h4>
-        <dev class="form-control">
-            <input 
-            type="text" 
-            name="name" 
-            class="task-input" 
-            placeholder="例：英会話の勉強"
-            >
-            <button type="submit" class="btn submit-btn">送信</button>
-        </dev>
-        <div class="form-alert"></div>
-    </form>
-    <!-- この下にタスクが読み込まれる -->
-    <section class="tasks-container">
-        <div class="tasks"></div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
+  <form class="task-form">
+    <h4>KOMURUやりたいことリスト</h4>
+    <div class="form-control">
+      <input type="text" name="name" class="task-input" placeholder="例：英会話の勉強" />
+      <button type="submit" class="btn submit-btn">送信</button>
+    </div>
+    <div class="form-alert"></div>
+  </form>
+
+  <section class="tasks-container">
+    <div class="tasks"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
