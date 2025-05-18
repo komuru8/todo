@@ -2,6 +2,7 @@
 const express = require("express");
 //アプリとして使う
 const app = express();
+app.use(express.static("public"));
 //exportしたものをどこで管理するのか指定
 const taskRoute = require("./routes/tasks");
 const connectDB = require("./db/connect");
